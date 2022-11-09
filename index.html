@@ -60,12 +60,8 @@
    <section class="order overlay">
     <div class="container">
      <h1 class="order-title">Ефективні рішення для вашого бізнесу</h1>
-     <button class="order-btn" type="button">Замовити послугу</button>
+     <button class="order-btn" type="button" data-modal-open>Замовити послугу</button>
     </div>
-    <!-- 
-    <div class="modal-window">
-     <div class="window"></div>
-    </div> -->
    </section>
 
    <section class="benefits section">
@@ -119,17 +115,17 @@
      <ul class="doit-list">
       <li class="doit-item">
        <img src="./images/work-img-1.jpg" alt="our job" width="370" height="294" />
+       <p class="doit-label">Десктопні додатки</p>
       </li>
       <li class="doit-item">
        <img src="./images/work-img-2.jpg" alt="our job" width="370" height="294" />
+       <p class="doit-label">Мобільні додатки</p>
       </li>
       <li class="doit-item">
-       <div class="doit-overlay">
-        <img src="./images/work-img-3.jpg" alt="our job" width="370" height="294" />
-       </div>
+       <img src="./images/work-img-3.jpg" alt="our job" width="370" height="294" />
+       <p class="doit-label">Дизайнерські рішення</p>
       </li>
      </ul>
-     <div class="doit-overlay"></div>
     </div>
    </section>
 
@@ -406,5 +402,19 @@
     </div>
    </div>
   </footer>
+
+  <div class="modal-order is-hidden" data-modal>
+   <div class="modal-area">
+    <button class="modal-close" data-modal-close>
+     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+      <path
+       fill="#000"
+       d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"
+      />
+     </svg>
+    </button>
+   </div>
+  </div>
+  <script src="./js/modal.js"></script>
  </body>
 </html>
