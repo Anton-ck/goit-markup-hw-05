@@ -736,18 +736,18 @@ a {
  top: 50%;
  left: 50%;
 
- transform: translate(-50%, -50%) /* scale(1) */;
+ transform: translate(-50%, -50%) scale(1);
 
- /* transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1); */
+ transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
  background-color: var(--thirdy-color);
 }
 
-.modal-area {
+/* .modal-area {
  animation-name: area-hide;
  animation-duration: 2000ms;
  animation-timing-function: linear;
-}
+} */
 
 .modal-close {
  display: flex;
@@ -767,9 +767,9 @@ a {
  cursor: pointer;
 }
 
-@keyframes area-hide {
+/* @keyframes area-hide {
  0% {
-  transform: translate(-50%, -50%) scaleX(0.1);
+  transform: translate(-50%, -50%) scale(0.1);
  }
 
  20% {
@@ -779,7 +779,7 @@ a {
  30% {
   transform: translate(-50%, -50%) scaleX(0.3);
  }
-
+ 
  50% {
   transform: translate(-50%, -50%) scaleY(0.5);
  }
@@ -802,7 +802,7 @@ a {
  100% {
   transform: translate(-50%, -50%) scale(1);
  }
-}
+} */
 
 /* @keyframes area-hide {
  0% {
